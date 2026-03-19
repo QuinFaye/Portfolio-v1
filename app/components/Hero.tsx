@@ -78,7 +78,7 @@ export default function Hero() {
       </div>
 
       {/* Right Interactive Blob */}
-      <div className="absolute inset-0 right-0 flex items-center justify-end pr-30 z-5" style={{ overflow: 'visible' }}>
+      <div className="absolute inset-0 right-0 flex items-start justify-end pr-30 z-5" style={{ overflow: 'visible', paddingTop: '130px' }}>
         <div
           ref={imageContainerRef}
           className="relative w-170 h-100"
@@ -111,26 +111,25 @@ export default function Hero() {
               }}
             />
             {/* Top image = revealed on hover */}
-            <div className="relative overflow-visible" style={{ width: '420px', height: '348px' }}>
-            <img
-              src="/chrome-blob-reveal.png"
-              alt="Chrome blob face"
-              className="absolute object-cover"
-              style={{
+            <div className="relative overflow-visible" style={{ width: '800px', height: '840px' }}>
+            <img src="/chrome-blob-reveal.png" 
+              alt="Chrome blob face" 
+              className="absolute object-cover" 
+              style={{ 
                 transform: 'rotate(5deg)',
-                position: 'absolute',
-                top: '0px',        
-                left: '0px',      
-                width: "420px", 
-                height: "348px",
-                objectFit: 'cover',
-                WebkitMaskImage: 'radial-gradient(circle 100px at var(--x) var(--y), black 60%, transparent 100%)',
-                maskImage:       'radial-gradient(circle 100px at var(--x) var(--y), black 80%, transparent 100%)',
-                WebkitMaskRepeat: 'no-repeat',
-                maskRepeat: 'no-repeat',
+                position: 'absolute', 
+                top: '-45px', 
+                left: '-36px', 
+                width: '500px', 
+                height: '490px', 
+                objectFit: 'cover', 
+                WebkitMaskImage: 'radial-gradient(circle 100px at var(--x) var(--y), black 60%, transparent 100%)', 
+                maskImage: 'radial-gradient(circle 100px at var(--x) var(--y), black 80%, transparent 100%)', 
+                WebkitMaskRepeat: 'no-repeat', 
+                maskRepeat: 'no-repeat', 
                 transition: 'mask-position 0.1s',
-              }}
-            />
+                overflow: 'visible', 
+              }} />
             </div>
           </div>
         </div>
@@ -142,8 +141,8 @@ export default function Hero() {
         cherryLeft="20.4px"
         shroomTop="590.25px"
         shroomLeft="-160.23px"
-        barcodeLeft="460px"
-        barcodeTop="600px"
+        barcodeLeft="430px"
+        barcodeTop="525px"
         sparkleLeft="600px"
         sparkleTop="390px"
       />

@@ -1,5 +1,3 @@
-const chromeBlob = "/chrome-blob.png";
-const chromeBlobReveal = "/chrome-blob-reveal.png";
 const cherry = "/cherry.png";
 const shroom = "/shroom.png";
 const sparkle = "/sparkle.png";

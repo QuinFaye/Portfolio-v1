@@ -1,4 +1,21 @@
 @import "tailwindcss";
+@import "@fontsource/koho";
+
+@font-face {
+  font-family: 'Glass TTY VT220';
+  src: url('https://fonts.gstatic.com/s/glassttyvt220/v1/f0X10jozOpal36F6aRmhVjx8.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nico Moji';
+  src: url('https://fonts.gstatic.com/s/nicomoji/v21/Gw6nwT_6gMXH4VG1KvlNDmjoUuVtqw.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 @font-face {
   font-family: 'Necosmic';
@@ -12,6 +29,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-nicomoji: 'Nico Moji', sans-serif;
 }
 
 @theme inline {
@@ -22,6 +40,7 @@
   --font-serif: var(--font-playfair);
   --font-koho: var(--font-koho);
   --font-necosmic: 'Necosmic', sans-serif;
+  --font-nicomoji: var(--font-nicomoji);
 }
 
 @media (prefers-color-scheme: dark) {

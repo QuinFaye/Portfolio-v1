@@ -2,6 +2,7 @@
 
 import ContactButton from './ContactButton';
 import ArrowIcon from './ArrowIcon';
+import DownArrowIcon from './DownArrowIcon';
 import AboutMeHeading from './AboutMeHeading';
 import HeroDecorations from './HeroDecorations';
 import { ArrowDown } from "lucide-react";
@@ -56,29 +57,29 @@ export default function Hero() {
       </div>
 
       {/* Left Content */}
-      <div className="absolute inset-0 flex flex-col justify-center px-20 space-y-4 z-10 -translate-y-16 w-1/2">
-        <h1 className="text-[43px] font-necosmic text-black leading-tight">
+      <div className="absolute inset-0 flex flex-col justify-center px-6 lg:px-12 xl:px-20 space-y-2 lg:space-y-3 xl:space-y-4 z-10 -translate-y-16 w-1/2">
+        <h1 className="text-2xl lg:text-3xl xl:text-[43px] font-necosmic text-black leading-tight">
           Sodein Fayé-Dikio
         </h1>
-        <h2 className="-mt-3 text-[20px] font-koho font-semibold text-gray-800">
+        <h2 className="-mt-3 text-xs lg:text-sm xl:text-[20px] font-semibold text-gray-800" style={{ fontFamily: 'var(--font-koho)' }}>
           UI/UX Designer & Creative Developer
         </h2>
-        <p className="mt-4 max-w-xl text-[23px] font-koho font-medium text-black leading-relaxed" style={{ maxWidth: '450px' }}>
+        <p className="mt-2 lg:mt-3 xl:mt-4 max-w-xl text-xs lg:text-sm xl:text-[23px] font-medium text-black leading-relaxed" style={{ maxWidth: '450px', fontFamily: 'var(--font-koho)' }}>
           I design thoughtful digital experiences and build interactive interfaces.
           Let me bring your unique ideas to life!
         </p>
         <a
           href="/resume.pdf"
-          className="mt-6 text-[22px] font-koho font-medium inline-flex items-center gap-2 px-6 py-3 border border-black rounded-[10px] font-semibold text-black hover:bg-black hover:text-[#49CB3B] hover:border-[#49CB3B] transition-all duration-300"
-          style={{ maxWidth: '275px' }}
+          className="mt-3 lg:mt-4 xl:mt-6 text-xs lg:text-sm xl:text-[22px] font-medium inline-flex items-center gap-1 lg:gap-1.5 xl:gap-2 px-3 lg:px-4 xl:px-6 py-2 lg:py-2.5 xl:py-3 border border-black rounded-lg lg:rounded-lg xl:rounded-[10px] font-semibold text-black hover:bg-black hover:text-[#49CB3B] hover:border-[#49CB3B] transition-all duration-300 w-fit"
+          style={{ fontFamily: 'var(--font-koho)' }}
         >
-          <ArrowDown />
+          <ArrowDown size={16} />
           Download Resumé
         </a>
       </div>
 
       {/* Right Interactive Blob */}
-      <div className="absolute inset-0 right-0 flex items-start justify-end pr-30 z-5" style={{ overflow: 'visible', paddingTop: '130px' }}>
+      <div className="absolute inset-0 right-0 flex items-start justify-end pr-8 lg:pr-16 xl:pr-30 z-5" style={{ overflow: 'visible', paddingTop: 'clamp(80px, 15vh, 130px)' }}>
         <div
           ref={imageContainerRef}
           className="relative w-170 h-100"
@@ -88,8 +89,8 @@ export default function Hero() {
             // these vars control the mask and glow
             '--x': '0px',
             '--y': '0px',
-            width: '430px',  
-            height: '430px',
+            width: 'clamp(200px, 30vw, 430px)',  
+            height: 'clamp(200px, 30vw, 430px)',
           } as React.CSSProperties}
         >
 
@@ -159,7 +160,7 @@ export default function Hero() {
       <div className="absolute bottom-20 -left-4 flex items-start gap-4 z-20">
         <AboutMeHeading />
         <div className="w-12 h-10">
-          <ArrowIcon />
+          <ArrowDown size={45} />
         </div>
       </div>
 

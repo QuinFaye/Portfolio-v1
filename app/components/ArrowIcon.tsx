@@ -1,4 +1,4 @@
-const imgArrowIcon = "https://www.figma.com/api/mcp/asset/707381f3-9792-4112-84ca-f522dd58e291";
+const imgArrowIcon = "/arrow.png";
 
 export default function ArrowIcon() {
   return (

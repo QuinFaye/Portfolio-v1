@@ -6,10 +6,10 @@ export default function MyWorksCard({ children }: { children: React.ReactNode })
       <div className="relative
          w-full
          -mt-[210px]
-         mb-32
+         mb-[320px]
          z-0
          overflow-visible
-         h-[2788px]
+         h-[2450px]
          ">
         
         <Subtract2>
